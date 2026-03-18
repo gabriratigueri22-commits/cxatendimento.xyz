@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Gestão de Ativos | Holding & Inteligência Patrimonial</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Libre+Baskerville:italic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root { --corporate-blue: #0a192f; --accent-gold: #c5a059; --light-gray: #f4f7f6; }
+        body { font-family: 'Montserrat', sans-serif; color: #333; background-color: white; overflow-x: hidden; }
+        h1, h2, .navbar-brand { font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+        .serif { font-family: 'Libre Baskerville', serif; font-style: italic; color: var(--accent-gold); text-transform: none; }
+
+        /* Navbar */
+        .navbar { background: var(--corporate-blue); padding: 20px 0; border-bottom: 3px solid var(--accent-gold); }
+        .navbar-brand { color: white !important; font-size: 1.5rem; }
+
+        /* Hero */
+        .hero { 
+            background: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            padding: 160px 0 100px; color: white;
+        }
+
+        /* Cards */
+        .card-asset { 
+            border: none; border-radius: 0; padding: 45px; 
+            background: var(--light-gray); transition: 0.4s; height: 100%;
+            border-left: 4px solid var(--corporate-blue);
+        }
+        .card-asset:hover { background: #e2e8e7; transform: translateY(-5px); border-left-color: var(--accent-gold); }
+        
+        /* Mapa Corrigido */
+        .map-wrapper { border: 8px solid var(--light-gray); border-radius: 5px; height: 450px; overflow: hidden; }
+        
+        /* Footer */
+        footer { background: var(--corporate-blue); color: #fff; padding: 60px 0 30px; }
+        .footer-line { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; font-size: 0.75rem; opacity: 0.6; }
+
+        .btn-gold { background: var(--accent-gold); color: white; border: none; font-weight: 700; padding: 12px 30px; border-radius: 0; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn-gold:hover { background: #b08e4a; color: white; box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">FF <span class="serif">Gestão de Ativos</span></a>
+            <div class="ms-auto d-flex align-items-center">
+                <span class="text-white-50 d-none d-lg-block me-4 small">PETROLINA - PE</span>
+                <a class="btn btn-gold btn-sm" href="#contato">CONSULTORIA</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 mb-4">Governança e <br><span class="serif">Gestão Patrimonial.</span></h1>
+                    <p class="lead mb-5 opacity-75">F F Gestão de Ativos LTDA: Especialistas em holdings de instituições não-financeiras. Segurança jurídica e eficiência para o seu legado.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#servicos" class="btn btn-gold px-5 py-3">NOSSAS SOLUÇÕES</a>
+                        <a href="#contato" class="btn btn-outline-light px-5 py-3">ONDE ESTAMOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 my-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Estratégia Corporativa</h2>
+                <p class="text-muted">CNAE 64.62-0-00 - Inteligência em Holdings</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-asset">
+                        <i class="fas fa-landmark fs-1 mb-4" style="color: var(--corporate-blue);"></i>
+                        <h4 class="fw-bold">Gestão de Participações</h4>
+                        <p class="small text-muted">Administração profissional de quotas e ações em empresas operacionais, visando lucro e controle.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-asset">
+                        <i class="fas fa-shield-alt fs-1 mb-4" style="color: var(--corporate-blue);"></i>
+                        <h4 class="fw-bold">Proteção de Ativos</h4>
+                        <p class="small text-muted">Centralização de patrimônio para blindagem administrativa e redução de riscos operacionais.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-asset">
+                        <i class="fas fa-handshake fs-1 mb-4" style="color: var(--corporate-blue);"></i>
+                        <h4 class="fw-bold">Sucessão Familiar</h4>
+                        <p class="small text-muted">Estruturação de holdings para facilitar o processo de inventário e sucessão empresarial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <h2 class="display-6 fw-bold mb-4">Sede Petrolina</h2>
+                    <p class="text-muted">Atendimento executivo em localização privilegiada no centro de Pernambuco.</p>
+                    <div class="p-4 bg-white shadow-sm border-start border-5 border-warning">
+                        <p class="mb-1 fw-bold">Rua Santa Cecilia, 20 B</p>
+                        <p class="mb-1">Centro, Petrolina - PE</p>
+                        <p class="mb-0">CEP: 56304-470</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-wrapper">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.3804899554474!2d-40.50523272421313!3d-9.390508591261314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x77370217f22f77b%3A0x6b3b5e43a6d4e2a!2sR.%20Santa%20Cec%C3%ADlia%2C%2020%20-%20Centro%2C%20Petrolina%20-%20PE%2C%2056304-470!5e0!3m2!1spt-BR!2sbr!4v1710790000000!5m2!1spt-BR!2sbr">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-6">
+                    <h3 class="mb-2 text-white">FF GESTÃO DE ATIVOS</h3>
+                    <p class="text-white-50 small mb-0">CNPJ: 65.611.094/0001-80</p>
+                    <p class="text-white-50 small">Petrolina, Pernambuco - Brasil</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-3">
+                        <a href="politicas.html" class="text-white-50 text-decoration-none small mx-2">PRIVACIDADE</a>
+                        <a href="politicas.html#termos" class="text-white-50 text-decoration-none small mx-2">TERMOS DE USO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line text-center">
+                © 2026 F F Gestao de Ativos LTDA. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
